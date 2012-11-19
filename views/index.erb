@@ -1,0 +1,13 @@
+<form action="/search" method="get">
+  <label for="q">Search:</label>
+  <input type="input" name="q" value="<%= @q %>" />
+</form>
+
+<ul id="results">
+  <% @results.each do |result| %>
+    <li>
+      <%= result.timestamp %> -
+      <%= result.to_s %>
+    </li>
+  <% end %>
+</ul>

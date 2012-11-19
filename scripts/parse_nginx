@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/initialisers/init'
+
+# 127.0.0.1 - - [08/Nov/2012:11:54:42 +1100] "GET /attachments/dubrovnik/DSC_0805_thumb_500.jpg HTTP/1.1" 200 163818 "-" "Googlebot-Image/1.0"
+# => ["127.0.0.1", "-", "-", "[08/Nov/2012:11:54:42", "+1100]", "\"GET", "/attachments/dubrovnik/DSC_0805_thumb_500.jpg", "HTTP/1.1\"", "200", "163818", "\"-\"", "\"Googlebot-Image/1.0\""]
+
+# NginxLogEntry.destroy_all
+# LogEntry.destroy_all
+
+Dir['./data/nginx/*'].sort { |x, y| (x.match(/\.(\d+)$/) ? x.match(/\.(\d+)$/)[1].to_i : 0) <=> (y.match(/\.(\d+)$/) ? y.match(/\.(\d+)$/)[1].to_i : 0) }.each do |file|
+
+  puts "Processing #{file}.."
+
+  contents = File.read(file)
+
+  contents.each_line do |line|
+    result = line.split(/ /)
+
+    ip_address = result[0]
+    path = result[6]
+    status_code = result[8].to_i
+    raw = line
+    timestamp = result[3].match(/\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2}/)[0]
+
+    NginxLogEntry.create(
+      ip_address: result[0],
+      path: path,
+      status_code: status_code,
+      raw: raw,
+      timestamp: Time.strptime(timestamp, "%d/%b/%Y:%H:%M:%S")
+    )
+  end
+end
+
+# ap LogEntry.first
+# ap NginxLogEntry.first

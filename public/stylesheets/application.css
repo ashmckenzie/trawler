@@ -1,0 +1,44 @@
+body {
+  background: url("/images/background.png") transparent repeat fixed;
+  font-family: 'FSme';
+}
+
+header {
+  padding-top: 15px;
+}
+
+header span {
+  color: #fff;
+  font-family: 'Belta Bold';
+  font-size: 88px;
+  padding-left: 20px;
+  letter-spacing: 6px;
+}
+
+header #image img {
+  width: 150px;
+}
+
+footer {
+  height: 80px;
+}
+
+header,
+footer,
+section#content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+section#content {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px;
+  min-height: 800px;
+  width: 900px;
+  border-radius: 6px;
+}
+
+ul#results li {
+  padding-bottom: 10px;
+}

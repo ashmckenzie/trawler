@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/initialisers/init'
+
+Dir['./data/rails/*'].each do |file|
+
+  puts "Processing #{file}.."
+
+  contents = File.read(file)
+
+  # Started GET "/search/list?checkIn=2012-11-08&checkOut=2012-11-10&adults=1&children=1&infants=&location=Port%20Fairy%2C%20VIC%2C%20Australia" for 127.0.0.1 at 2012-10-04 13:52:55 +1000
+  # => ["Started", "GET", "\"/search/list?checkIn=2012-11-08&checkOut=2012-11-10&adults=1&children=1&infants=&location=Port%20Fairy%2C%20VIC%2C%20Australia\"", "for", "127.0.0.1", "at", "2012-10-04", "13:52:55", "+1000"]
+
+  # Completed 200 OK in 156ms (Views: 2.9ms | ActiveRecord: 10.9ms | ActivityFeed: 0.0ms | Pegasus: 0.0ms)
+  # ["Completed", "200", "OK", "in", "156ms", "(Views:", "2.9ms", "|", "ActiveRecord:", "10.9ms", "|", "ActivityFeed:", "0.0ms", "|", "Pegasus:", "0.0ms)"]
+
+  data =[]
+
+  contents.each_line do |line|
+
+    next unless line
+
+    result = line.chomp.split(/ /)
+
+    if result[0] == 'Started' || result[0] == 'Completed'
+      data << result
+    end
+
+    if result[0] == 'Completed' && result[1] != '401'
+
+      timestamp = "#{data[0][6]} #{data[0][7]} #{data[0][8]}"
+
+      RailsLogEntry.create(
+        request_type: data[0][1],
+        status_code: data[1][1],
+        time: data[1][4].to_i,
+        path: data[0][2],
+        ip_address: result[0][4],
+        raw: data.map { |x| x.join(' ') }.join("\n"),
+        timestamp: Time.strptime(timestamp, "%Y-%m-%d %H:%M:%S %z")
+      )
+
+      data = []
+    end
+  end
+end
