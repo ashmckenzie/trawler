@@ -2,6 +2,4 @@
 
 require_relative '../lib/initialisers/init'
 
-RailsLogEntry.destroy_all
-NginxLogEntry.destroy_all
 LogEntry.destroy_all

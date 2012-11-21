@@ -4,6 +4,9 @@ gem 'mongoid'
 gem 'activesupport'
 gem 'sinatra', :require => false
 gem 'hashie'
+gem 'compass'
+gem 'haml'
+gem 'sass'
 
 group :development do
   gem 'thin'
@@ -11,4 +14,5 @@ group :development do
   gem 'awesome_print'
   gem 'pry'
   gem 'pry-remote'
+  gem 'pry-debugger'
 end

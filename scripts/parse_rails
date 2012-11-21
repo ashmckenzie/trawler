@@ -2,7 +2,9 @@
 
 require_relative '../lib/initialisers/init'
 
-Dir['./data/rails/*'].each do |file|
+dir = File.expand_path('../../data/rails', __FILE__)
+
+Dir["#{dir}/*"].each do |file|
 
   puts "Processing #{file}.."
 
@@ -33,9 +35,9 @@ Dir['./data/rails/*'].each do |file|
       RailsLogEntry.create(
         request_type: data[0][1],
         status_code: data[1][1],
-        time: data[1][4].to_i,
-        path: data[0][2],
-        ip_address: result[0][4],
+        time: data[1][4],
+        path: data[0][2].gsub(/"/, ''),
+        ip_address: data[0][4],
         raw: data.map { |x| x.join(' ') }.join("\n"),
         timestamp: Time.strptime(timestamp, "%Y-%m-%d %H:%M:%S %z")
       )

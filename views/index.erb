@@ -1,13 +1,17 @@
-<form action="/search" method="get">
+<form action="/search" method="get" id="search">
   <label for="q">Search:</label>
-  <input type="input" name="q" value="<%= @q %>" />
+  <input type="input" name="q" value="<%= @q.escaped_string %>" />
 </form>
 
 <ul id="results">
   <% @results.each do |result| %>
     <li>
+      <!-- <%= result.id %> - -->
       <%= result.timestamp %> -
-      <%= result.to_s %>
+      <%= result.as_string %>
+      <div class="raw">
+        <%= result.raw %>
+      </div>
     </li>
   <% end %>
 </ul>

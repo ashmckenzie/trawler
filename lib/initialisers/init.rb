@@ -3,6 +3,7 @@ Bundler.require(:default, :development)
 
 require 'active_support/all'
 
-Dir['./lib/models/*'].each { |file| require file }
+dir = File.expand_path('../../../lib/models', __FILE__)
+Dir["#{dir}/*"].each { |file| require file }
 
-Mongoid.load!("./config/mongoid.yml", :development)
+Mongoid.load!(File.expand_path('../../../config/mongoid.yml', __FILE__), :development)
