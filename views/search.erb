@@ -1,0 +1,33 @@
+<%= erb :form %>
+
+<% if @results.empty? %>
+
+  <br/>
+
+  <div id="pagination">
+    <p>Nothing found captain!</p>
+  </div>
+
+<% else %>
+
+  <br/>
+
+  <div id="pagination">
+    <p><span class="total"><%= @results.total_entries %></span>results</p>
+    <%= will_paginate @results %>
+  </div>
+
+  <ul id="results">
+    <% @results.each do |result| %>
+      <li>
+        <a href="javascript:void(0)" class="zoom icon-zoom-in" title="Show more detail"></a>
+        <div class="result"><%= result.as_string %></div>
+        <div class="raw"><%= result.raw %></div>
+        <div class="entry timestamp">timestamp=<span><%= result.timestamp %></span></div>
+        <div class="entry source-type">source_type=<span><%= result.source_type %></span></div>
+        <div class="entry id">id=<span><%= result.id %></span></div>
+      </li>
+    <% end %>
+  </ul>
+
+<% end %>

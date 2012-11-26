@@ -1,7 +1,5 @@
 require './lib/initialisers/init'
+require './trawler_app'
 
-require 'sinatra'
-
-require './app'
-run Sinatra::Application
+run TrawlerApp.run!
 

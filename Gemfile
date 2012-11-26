@@ -5,9 +5,10 @@ gem 'activesupport'
 gem 'sinatra', :require => false
 gem 'will_paginate_mongoid'
 gem 'hashie'
-gem 'compass'
 gem 'haml'
 gem 'sass'
+gem 'coffee-script'
+gem 'sinatra-sprockets'
 
 group :development do
   gem 'thin'

@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+puts "ERROR: Disabled!"
+exit
+
 require_relative '../lib/initialisers/init'
 
 dir = File.expand_path('../../data/rails', __FILE__)

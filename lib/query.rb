@@ -1,21 +1,3 @@
-require 'will_paginate/array'
-require 'will_paginate/view_helpers/sinatra'
-
-get '/' do
-  @q = ''
-  @results = []
-  erb :index
-end
-
-get '/search' do
-  q = Query.new(params[:q])
-  terms = q.terms
-  options = terms.structured.merge({ raw: Regexp.new(terms.loose) })
-  @results = LogEntry.any_of(options).desc(:timestamp).paginate(:page => params[:page])
-  @query = q.escaped_string
-  erb :index
-end
-
 class Query
 
   attr_reader :raw
@@ -25,8 +7,11 @@ class Query
   end
 
   def as_string
-    # terms.map { |key, value| %Q{#{key}="#{value}"} }.join(' ')
     @raw
+  end
+
+  def as_hash
+    terms.structured.merge({ raw: Regexp.new(terms.loose) })
   end
 
   def escaped_string

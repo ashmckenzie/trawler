@@ -1,0 +1,108 @@
+//
+//=require_directory .
+//
+// ----------------------------------------------------------------------------
+
+body
+  background: url("/assets/background.png") transparent repeat fixed
+  font-family: 'FSme'
+
+header
+  padding-top: 15px
+  span
+    color: #fff
+    font-family: 'Belta Bold'
+    font-size: 88px
+    padding-left: 20px
+    letter-spacing: 6px
+  #image img
+    width: 150px
+
+footer
+  height: 80px
+
+header, footer
+  margin: 0 auto
+  width: 1280px
+
+section#content
+  margin: 0 auto
+  width: 1280px
+  background-color: #fff
+  margin-top: 20px
+  padding: 30px
+  min-height: 800px
+  width: 1200px
+  border-radius: 6px
+
+ul
+  padding-left: 0
+  list-style: none
+  &#results li
+    border-bottom: 1px dotted #CCC
+    padding: 15px 0
+    a
+      color: #000
+      margin-top: -2px
+      position: absolute
+      text-decoration: none
+    .result
+      font-family: Consolas
+      font-size: 0.8em
+      margin-left: 22px
+      overflow: auto
+      padding-bottom: 6px
+      // white-space: nowrap
+    .raw
+      background-color: #eee
+      display: none
+      line-height: 26px
+      padding: 14px
+    .entry
+      color: #999
+      display: inline
+      font-family: Monaco
+      font-size: 0.5em
+      padding-right: 4px
+      span
+        color: #000
+      &.timestamp
+        clear: left
+
+#search
+  label
+    font-size: 20px
+  input[name="q"]
+    font-size: 20px
+    padding: 6px
+    width: 92%
+
+#pagination
+  .total
+    font-weight: bold
+  background: #f1f1f1
+  border: 1px solid #e5e5e5
+  text-align: center
+  padding: 1em
+  cursor: default
+  a, span
+    padding: 0.2em 0.3em
+  .disabled
+    color: #aaaaaa
+  .current
+    font-style: normal
+    font-weight: bold
+    background-color: darken(#f1f1f1, 20)
+    display: inline-block
+    width: 1.4em
+    height: 1.4em
+    line-height: 1.5
+    -moz-border-radius: 1em
+    -webkit-border-radius: 1em
+    border-radius: 1em
+    text-shadow: rgba(white, .8) 1px 1px 1px
+  a
+    text-decoration: none
+    color: black
+    &:hover, &:focus
+      text-decoration: underline
