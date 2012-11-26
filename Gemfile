@@ -1,14 +1,15 @@
 source :rubygems
 
+gem 'sinatra', :require => false
+gem 'sinatra-contrib'
+gem 'sinatra-sprockets'
 gem 'mongoid'
 gem 'activesupport'
-gem 'sinatra', :require => false
 gem 'will_paginate_mongoid'
 gem 'hashie'
 gem 'haml'
 gem 'sass'
 gem 'coffee-script'
-gem 'sinatra-sprockets'
 
 group :development do
   gem 'thin'

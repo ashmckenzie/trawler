@@ -21,21 +21,22 @@ header
 footer
   height: 80px
 
-header, footer
+header,
+footer,
+section#content
   margin: 0 auto
-  width: 1280px
+  width: 94%
 
 section#content
   margin: 0 auto
-  width: 1280px
   background-color: #fff
   margin-top: 20px
   padding: 30px
   min-height: 800px
-  width: 1200px
   border-radius: 6px
 
 ul
+  clear: both
   padding-left: 0
   list-style: none
   &#results li
@@ -76,34 +77,46 @@ ul
   input[name="q"]
     font-size: 20px
     padding: 6px
-    width: 92%
+    width: 93%
 
 #pagination
-  .total
-    font-weight: bold
   background: #f1f1f1
   border: 1px solid #e5e5e5
-  text-align: center
-  padding: 1em
-  cursor: default
-  a, span
-    padding: 0.2em 0.3em
-  .disabled
-    color: #aaaaaa
-  .current
-    font-style: normal
+  float: left
+  margin-bottom: 14px
+  width: 100%
+  .float-left
+    margin-left: 15px
+    a
+      color: #444
+  .total
     font-weight: bold
-    background-color: darken(#f1f1f1, 20)
-    display: inline-block
-    width: 1.4em
-    height: 1.4em
-    line-height: 1.5
-    -moz-border-radius: 1em
-    -webkit-border-radius: 1em
-    border-radius: 1em
-    text-shadow: rgba(white, .8) 1px 1px 1px
-  a
-    text-decoration: none
-    color: black
-    &:hover, &:focus
-      text-decoration: underline
+  .pagination
+    float: right
+    text-align: center
+    padding: 1em
+    cursor: default
+    a, span
+      padding: 0.2em 0.3em
+    .disabled
+      color: #aaaaaa
+    .current
+      font-style: normal
+      font-weight: bold
+      background-color: darken(#f1f1f1, 20)
+      display: inline-block
+      width: 1.4em
+      height: 1.4em
+      line-height: 1.5
+      -moz-border-radius: 1em
+      -webkit-border-radius: 1em
+      border-radius: 1em
+      text-shadow: rgba(white, .8) 1px 1px 1px
+    a
+      text-decoration: none
+      color: black
+      &:hover, &:focus
+        text-decoration: underline
+
+.float-left
+  float: left

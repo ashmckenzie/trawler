@@ -2,6 +2,7 @@ require 'bundler/setup'
 Bundler.require(:default, :development)
 
 require 'sinatra/base'
+require "sinatra/reloader"
 require 'sprockets'
 require 'will_paginate/array'
 require 'will_paginate/view_helpers/sinatra'
