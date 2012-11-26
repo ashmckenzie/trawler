@@ -1,17 +1,23 @@
 <form action="/search" method="get" id="search">
   <label for="q">Search:</label>
-  <input type="input" name="q" value="<%= @q.escaped_string %>" />
+  <input type="input" name="q" value="<%= @query %>" />
 </form>
 
-<ul id="results">
-  <% @results.each do |result| %>
-    <li>
-      <!-- <%= result.id %> - -->
-      <%= result.timestamp %> -
-      <%= result.as_string %>
-      <div class="raw">
-        <%= result.raw %>
-      </div>
-    </li>
-  <% end %>
-</ul>
+<% unless @results.empty? %>
+  <p><%= @results.total_entries %> results
+
+  <%= will_paginate @results %>
+
+  <ul id="results">
+    <% @results.each do |result| %>
+      <li>
+        <div class="result"><%= result.as_string %></div>
+        <div class="raw"><%= result.raw %></div>
+        <div class="entry timestamp">timestamp=<span><%= result.timestamp %></span></div>
+        <div class="entry source-type">source_type=<span><%= result.source_type %></span></div>
+        <div class="entry id">id=<span><%= result.id %></span></div>
+      </li>
+    <% end %>
+  </ul>
+
+<% end %>

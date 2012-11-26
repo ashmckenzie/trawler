@@ -1,0 +1,1561 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"act",
+				"activity_feed"
+			],
+			[
+				"des",
+				"descriptor_id"
+			],
+			[
+				"Act",
+				"activity"
+			],
+			[
+				"rel",
+				"related_descriptor"
+			],
+			[
+				"P",
+				"Property"
+			],
+			[
+				"fee",
+				"feed_obj"
+			],
+			[
+				"ra",
+				"rails_env"
+			],
+			[
+				"Ac",
+				"ActivityMonitor"
+			],
+			[
+				"inc",
+				"include_production_envs"
+			],
+			[
+				"app",
+				"apply_command"
+			],
+			[
+				"End",
+				"EngineYard"
+			],
+			[
+				"environments",
+				"environments"
+			],
+			[
+				"en",
+				"engineyard"
+			],
+			[
+				"prm",
+				"promotion_b"
+			],
+			[
+				"pr",
+				"promotion"
+			],
+			[
+				"Offer",
+				"OfferByDate"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/index.erb",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.rb",
+			"settings":
+			{
+				"buffer_size": 1428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/stylesheets/application.css",
+			"settings":
+			{
+				"buffer_size": 1006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/parse_rails",
+			"settings":
+			{
+				"buffer_size": 1699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/parse_nginx",
+			"settings":
+			{
+				"buffer_size": 2312,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"syntaru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgrae",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"gt bla",
+				"Git: Blame"
+			],
+			[
+				"upr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgrad",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"xml",
+				"Snippet: XML Processing Instruction"
+			],
+			[
+				"comb",
+				"Sort via CSScomb"
+			],
+			[
+				"css c",
+				"Sort via CSScomb"
+			],
+			[
+				"css",
+				"Sort via CSScomb"
+			],
+			[
+				"git an",
+				"Git: Toggle Annotations"
+			],
+			[
+				"anno",
+				"Git: Toggle Annotations"
+			],
+			[
+				"bla",
+				"Git: Blame"
+			],
+			[
+				"blam",
+				"Git: Blame"
+			],
+			[
+				"ct",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"cta",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"tidt",
+				"Tidy HTML"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				":s",
+				":w - Save"
+			],
+			[
+				":undo",
+				"Tag: Remove All Attributes From Tags in Document"
+			],
+			[
+				"packag",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"oack",
+				"Package Control: Install Package"
+			],
+			[
+				"packge i",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ash/Personal/trawler/lib/models/nginx_log_entry.rb",
+		"/Users/ash/Personal/trawler/lib/models/log_entry.rb",
+		"/Users/ash/Personal/trawler/Gemfile",
+		"/Users/ash/Personal/trawler/scripts/parse_rails",
+		"/Users/ash/Hooroo/hotels/spec/models/bookings/service/command/email_subscription_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/models/bookings/service/command/decrement_inventory_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/models/bookings/service/command/red_email_subscription_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/register_booked_activity.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/red_email_subscription.rb",
+		"/Users/ash/Hooroo/hotels/app/models/inventory/pegasus/api.rb",
+		"/Users/ash/Hooroo/hotels/config/pegasus.yml",
+		"/Users/ash/Hooroo/hotels/cookbooks/config/templates/default/pegasus.yml.erb",
+		"/Users/ash/Hooroo/hotels/cookbooks/config/attributes/pegasus.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/email_subscription.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/transaction.rb",
+		"/Users/ash/Hooroo/hotels/spec/models/bookings/transaction_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command.rb",
+		"/Users/ash/Hooroo/hotels/spec/helpers/extranet/bookings_helper_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/helpers/extranet/bookings_helper.rb",
+		"/Users/ash/Hooroo/hotels/app/models/audit.rb",
+		"/Users/ash/Hooroo/hotels/spec/support/blueprints.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/booking.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/activation_date_calculator.rb",
+		"/Users/ash/Hooroo/hotels/app/controllers/extranet/bookings_controller.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/validations/booking.rb",
+		"/Users/ash/Hooroo/hotels/app/models/commercial/payment_timing.rb",
+		"/Users/ash/Hooroo/hotels/app/controllers/consumer/bookings_controller.rb",
+		"/Users/ash/Hooroo/hotels/db/schema.rb",
+		"/Users/ash/Hooroo/hotels/app/views/extranet/bookings/_invoice_audit_status.html.haml",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/consume_promotion.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/decrement_inventory.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/capture_payment.rb",
+		"/Users/ash/Hooroo/hotels/spec/shared/booking/authorise_commands_shared.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/authorise_payment.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command_strategy/authorise_commands.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command_strategy/channel_manager.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/command/consume_rooward.rb",
+		"/Users/ash/Hooroo/hotels/app/controllers/developer_controller.rb",
+		"/Users/ash/Hooroo/hotels/app/controllers/consumer/search_controller.rb",
+		"/Users/ash/Hooroo/hotels/app/models/offer.rb",
+		"/Users/ash/Hooroo/hotels/app/models/api_source.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/new/hooroo_booking_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/spec_helper.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/new/consumer/email_preferences_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/property.rb",
+		"/Users/ash/Hooroo/hotels/app/models/brand.rb",
+		"/Users/ash/Hooroo/hotels/app/models/searches/pegasus.rb",
+		"/Users/ash/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ash/Hooroo/hotels/spec/fixtures/vcr_cassettes/acceptance/sign_in.yml",
+		"/Users/ash/Hooroo/hotels/spec/integration/booking/service/command/pegasus_command_integration_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/state.rb",
+		"/Users/ash/Hooroo/hotels/spec/fixtures/vcr_cassettes/pegasus/consumer/search_card_view_success.yml",
+		"/Users/ash/Hooroo/hotels/app/models/location.rb",
+		"/Users/ash/Hooroo/hotels/app/models/search.rb",
+		"/Users/ash/Hooroo/hotels/config/paperclip.local.yml",
+		"/Users/ash/Hooroo/hotels/app/controllers/consumer/base_controller.rb",
+		"/Users/ash/Hooroo/hotels/app/controllers/extranet/locations_controller.rb",
+		"/Users/ash/Hooroo/hotels/spec/models/booking_inventory/pegasus/strategy_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/service/response.rb",
+		"/Users/ash/Hooroo/hotels/spec/models/audit_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/booking_inventory/pegasus/strategy.rb",
+		"/Users/ash/Hooroo/hotels/app/models/cancellation/pegasus/strategy.rb",
+		"/Users/ash/Hooroo/hotels/Gemfile",
+		"/Users/ash/Hooroo/hotels/app/models/enum_type.rb",
+		"/Users/ash/Hooroo/hotels/app/models/commercial/form_of_payment.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/extranet/booking_page/details_page.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/new/extranet/bookings/amend_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/core.rb",
+		"/Users/ash/Hooroo/hotels/app/views/extranet/bookings/_amend_action.html.haml",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/transaction_builder.rb",
+		"/Users/ash/Hooroo/hotels/config/environments/staging.rb",
+		"/Users/ash/Hooroo/hotels/lib/responsys_mailing_list_opt_out.rb",
+		"/Users/ash/Hooroo/hotels/spec/lib/responsys_mailing_list_opt_out_spec.rb",
+		"/Users/ash/Hooroo/hotels/lib/tasks/responsys.rake",
+		"/Users/ash/Hooroo/hotels/app/models/booking_inventory/pegasus/strategy_available.rb",
+		"/Users/ash/Hooroo/hotels/app/models/booking_inventory/unavailable.rb",
+		"/Users/ash/Hooroo/hotels/app/models/booking_inventory/unavailable/strategy.rb",
+		"/Users/ash/Hooroo/hotels/config/responsys.yml",
+		"/Users/ash/Hooroo/hotels/config/initializers/airbrake.rb",
+		"/Users/ash/Hooroo/hotels/spec/fixtures/vcr_cassettes/pegasus/extranet/offer.yml",
+		"/Users/ash/Hooroo/hotels/spec/models/searches/pegasus_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/controllers/consumer/api/search_controller.rb",
+		"/Users/ash/Hooroo/hotels/lib/redis_config.rb",
+		"/Users/ash/Hooroo/hotels/config/environments/production.rb",
+		"/Users/ash/Hooroo/hotels/config/environments/development.rb",
+		"/Users/ash/Hooroo/hotels/Procfile",
+		"/Users/ash/Hooroo/hotels/lib/scoped_cache.rb",
+		"/Users/ash/Hooroo/hotels/spec/lib/scoped_cache_spec.rb",
+		"/Users/ash/Hooroo/hotels/lib/tasks/beaver.rake",
+		"/Users/ash/Hooroo/hotels/app/controllers/api/rate_plans_controller.rb",
+		"/Users/ash/Hooroo/hotels/app/models/inventory/local/available_offer_summary.rb",
+		"/Users/ash/Hooroo/hotels/Procfile.zeus",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/extranet/bookings_page.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/dsl.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/consumer/search/search_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/consumer/search/search_with_content_spec.rb",
+		"/Users/ash/Hooroo/hotels/config/routes.rb",
+		"/Users/ash/Hooroo/hotels/spec/models/inventory/pegasus/offer_spec.rb",
+		"/Users/ash/Hooroo/hotels/app/models/inventory/pegasus/offer.rb",
+		"/Users/ash/Hooroo/hotels/app/models/searches/locals/available_offer.rb",
+		"/Users/ash/Hooroo/hotels/app/models/inventory/pegasus/lowest_cost_per_property.rb",
+		"/Users/ash/Hooroo/hotels/app/assets/javascripts/consumer_common.js.coffee",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/extranet/booking_dashboard/booking_dashboard_amend_scenario_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/new/extranet/content/article_management_spec.rb",
+		"/Users/ash/Hooroo/hotels/lib/tasks/one_off.rake",
+		"/Users/ash/Hooroo/hotels/spec/fixtures/vcr_cassettes/pegasus/make_reservation_success.yml",
+		"/Users/ash/Hooroo/hotels/spec/fixtures/vcr_cassettes/pegasus/make_reservation_failure.yml",
+		"/Users/ash/Hooroo/hotels/app/models/room_type.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/extranet/pages.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/new/extranet/properties/feedback_management_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/extranet/property_page/property_page.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/extranet/property_page/details_page.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/consumer/pages.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/support/ui_driver/extranet/property_page/bookings_page.rb",
+		"/Users/ash/Hooroo/hotels/config/database.yml",
+		"/Users/ash/Hooroo/hotels/spec/acceptance_helper.rb",
+		"/Users/ash/Hooroo/hotels/app/models/commercial/concerns/has_payment_timing.rb",
+		"/Users/ash/Hooroo/hotels/app/models/commercial/concerns/has_commission.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/extranet/property_details/property_images_hotelier_scenarios_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/extranet/room_type/room_type_hotelier_scenarios_spec.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/extranet/shared/image_management.rb",
+		"/Users/ash/Hooroo/hotels/app/models/commercial/concerns/has_form_of_payment.rb",
+		"/Users/ash/Hooroo/hotels/spec/acceptance/requests/extranet/images/images_hotelier_scenarios_spec.rb",
+		"/Users/ash/Hooroo/hotels/config.ru",
+		"/Users/ash/Library/Application Support/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/Users/ash/Hooroo/hotels/hotels.sublime-project",
+		"/Users/ash/Hooroo/hotels/app/controllers/extranet/booking_changes_controller.rb",
+		"/Users/ash/Hooroo/hotels/app/models/bookings/change/request.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"-spec/*",
+			"",
+			"*.haml",
+			"",
+			"*extranet*",
+			"",
+			"*seed*",
+			"spec/*",
+			"*.rb",
+			"",
+			"spec/*",
+			"",
+			"/Users/ash/Hooroo/hotels/app/models/inventory/pegasus",
+			"",
+			"spec/*",
+			"",
+			"spec/*",
+			"",
+			"/Users/ash/Hooroo/hotels/spec/acceptance/new,/Users/ash/Hooroo/hotels/spec/acceptance/support",
+			"/Users/ash/Hooroo/hotels/spec/acceptance/new",
+			"/Users/ash/Hooroo/hotels/spec/acceptance",
+			"",
+			"-spec/*",
+			"",
+			"*.rb",
+			"",
+			"*.js*,-/spec/*",
+			"*.js*",
+			"*.js",
+			"",
+			"*.js*",
+			"",
+			"*.js*",
+			"*.js*,-spec/*",
+			"*.js*",
+			"",
+			"*js*,-spec/*",
+			"*js*",
+			"*\\.js*",
+			"*js*",
+			"spec/*",
+			"",
+			"*.js*",
+			"*.js",
+			"spec/*",
+			"",
+			"*.coffee,-spec/*",
+			"*.coffee,-spec",
+			"*.coffee",
+			"",
+			"*js*",
+			"*.coffee",
+			"",
+			"*.js*",
+			"*.coffee",
+			"*.js*",
+			"",
+			"spec/*",
+			"",
+			"spec/*",
+			"app/*",
+			"",
+			"spec/integration/booking/*",
+			"./spec/integration/booking/*",
+			"./spec/integration/booking",
+			"booking*",
+			"",
+			"cookbooks/*",
+			"",
+			"spec/*",
+			"",
+			"cookbooks/*",
+			"",
+			"cookbooks/*",
+			"",
+			"spec/*",
+			"-spec/*",
+			"spec/*",
+			"-spec/*,*.rb",
+			"-spec/*",
+			"spec/*",
+			"-spec/*",
+			"spec/*",
+			"",
+			"-spec/*",
+			"-spec/*,*.coffee",
+			"-spec/*",
+			"-spec/*,*.coffee",
+			"-spec/*",
+			"spec/*",
+			"-spec/*",
+			"",
+			"*.coffee",
+			"-spec/*",
+			"",
+			"spec/*",
+			"-spec/*,*.coffee",
+			"-spec/*",
+			"spec/*",
+			"-spec/*",
+			"-spec/*,*.rb",
+			"-spec/*,*.rg",
+			"-spec/*,*.coffee",
+			"-spec/*",
+			"-spec/*,*.coffee",
+			"-spec/*",
+			"-spec/*,*.rb",
+			"-spec/*,*.rn",
+			"-spec/*",
+			"spec/*",
+			"-spec/*",
+			"spec/*",
+			"-spec/*",
+			"spec/*",
+			"-spec/*",
+			"",
+			"-*.coffee",
+			"*.coffee",
+			"",
+			"*.coffee",
+			"-spec/*",
+			"",
+			"-spec/*",
+			"",
+			"-spec/*",
+			"",
+			"-spec/*"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"request_type",
+			"def self.display_name",
+			"display_name",
+			"displayable_audits",
+			"available\\?",
+			"availability",
+			"base\\]\\[:availability",
+			"The reservation details you have selected are not available",
+			"payment_term",
+			"payment_timing",
+			"valid",
+			"Some ",
+			"Audit.new",
+			"Some message",
+			"Transact",
+			"subject",
+			"total_charges_amount",
+			"displayable_audits_for",
+			"BookingsHelper",
+			"displayable_audits_for",
+			"\"Subscribe\"",
+			"Subscribe",
+			"\"Promo\"",
+			"\"Inventory\"",
+			"\\.display_name",
+			"command_display_name",
+			"\"Inventory\"",
+			"\"Subscribe\"",
+			"command_display_name",
+			"displayable_audits_for",
+			"display_name",
+			"def respond",
+			"not supported",
+			"country not supported",
+			"Pegasus Exception",
+			"identify",
+			"Pegasus Exception",
+			"ota_",
+			"ApiSource",
+			"ResponseError",
+			"api_",
+			"new",
+			"\\.search",
+			"use_cassette",
+			"results_for",
+			"build_contextual_search",
+			"build_sear",
+			"build_",
+			"results_for",
+			"primary_content",
+			"actual_query",
+			"location",
+			"def build_search",
+			"build_contextual_search",
+			"find_lowest_cost_per_property",
+			"location",
+			"find_lowest_cost_per_property",
+			"primary_content",
+			"json_results_with_metadata",
+			"render_for_json",
+			"find_lowest_cost_per_property",
+			"Searches::Pegasus",
+			"find_offers_for_grid",
+			"all_offers_for_hotel_code",
+			"find_all_for_property",
+			"all_offers_for_hotel_code",
+			"find_by_hotel_codes",
+			"}$\"})",
+			"find_by_hotel_codes",
+			"find_lowest_cost_per_property",
+			"find_offers_for_grid",
+			"find_by_hotel_codes",
+			"availability_for_properties",
+			"pegasus",
+			"location",
+			"destination",
+			"location",
+			"candidate_offer_ids_from_bounding_box",
+			"FormOfPayment",
+			"check_in_date",
+			"Change nights\n\n",
+			"booking",
+			"hcd_content",
+			"hild",
+			"ild",
+			"\\+",
+			"+",
+			"ota_rate_plan_code",
+			"RACA",
+			"BW;97318",
+			"BW;",
+			"pegasus",
+			"is an in",
+			"raise",
+			"Airbrake",
+			"latest_opt_out_email_addresses",
+			"most_recent_opt_out_files",
+			"process",
+			"most_recent_opt_out_files",
+			"download_file",
+			"log",
+			"latest_opt_out_email_addresses",
+			"air",
+			"airbrake_api_key",
+			"ResponsysMailingListOptOut",
+			"find_first_for_offer",
+			"nightly_charges",
+			"room_charge_by_date",
+			"CONFIG_FILE",
+			"yml",
+			"by_bounding_box",
+			"candidate_offer_ids_from_bounding_box",
+			"find_lowest_cost_per_property",
+			"availability_for_properties",
+			"find_by_hotel_codes",
+			"availability_for_properties",
+			"PID10",
+			"PIR01",
+			"Rails.logger",
+			"cache",
+			"cach",
+			"redis",
+			"json_results_with_metadata",
+			"Earn pts",
+			"pts per",
+			"pts",
+			"search_details_attributes",
+			"to_search_details"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"BW;97207",
+			"booking",
+			"Booking",
+			"ssh",
+			"class}:",
+			"file_glob",
+			"log",
+			"input",
+			"process",
+			"Property.full_text_search",
+			"",
+			"estinationLocation",
+			"location",
+			"pathAndQueryString",
+			"make_unsaved",
+			"",
+			"<%= self.description %>",
+			"Feature.active\\?",
+			"RedisConfig::DB_FEATURE",
+			"RedisConfig::DB_AB_SPLIT",
+			"RedisConfig::DB_ACTIVITY_FEED",
+			"RedisConfig::DB_CACHING",
+			"RedisConfig::DB_RESQUE",
+			"availability_for_properties_options",
+			"\"",
+			"caching_options",
+			"load_the_config",
+			"DEFAULT_CACHE_TIME",
+			"https://does-not-matter:does-not-matter@ud-uat.pegs.com",
+			"does-not-matter:does-not-matter",
+			"SEARCH_CONFIG",
+			"BASE_CONFIG",
+			"BASE_HCD_CONFIG",
+			"BASE_CONFIG",
+			"user_search_without_location",
+			"user_search_with_location,",
+			"",
+			"\"",
+			"from_string_to_xml",
+			"user_search",
+			"availability_for_properties",
+			"opts",
+			"MAXIMUM_BOOKING_VARIANCE_IN_CENTS",
+			"branded_scoped_cache",
+			"current_subject",
+			"find_first_for_offer",
+			"oneself",
+			"cancelled_at",
+			"starting_page",
+			"join_page",
+			"Cei7em8heixofoi1ahhu",
+			"mapZoomLevelObjId",
+			"mapZoomLevelCookieName",
+			"objectId",
+			"asset_path $1\" %>",
+			"asset_path $1 \" %>",
+			"asset_path $1 \" %>)",
+			"<%= asset_path \"fan_page/img",
+			"recipient",
+			"image_url",
+			"/assets/fan_page/css/",
+			"/assets/fan_page/js/",
+			"/assets/fan_page/img/",
+			"/assets/fan_page/js/",
+			"/assets/fan_page/css/",
+			"/assets/fan_page/css",
+			"/assets/css\\/",
+			"/assets/fan_page/img",
+			"/fan_page/img",
+			"fan_page/img",
+			"brand_name",
+			"url_that_wont_match",
+			"brand_name",
+			"Voided",
+			"voided_at",
+			"void",
+			"voided",
+			"void",
+			"voided",
+			"void",
+			"voided",
+			"void",
+			"Void",
+			"Voided",
+			"voided",
+			"void",
+			"voided",
+			"Void",
+			"cancel",
+			"cancelled",
+			"Time.zone.today",
+			"amount_in_dollars",
+			"customer",
+			"Customer",
+			"CustomerSearchPage",
+			"customer",
+			"Customer",
+			"customer",
+			"first_name",
+			"last_name",
+			"customer",
+			"object",
+			"UNITS_TO_RUN",
+			"SPECS_TO_RUN",
+			"descriptor",
+			"key",
+			"key_type",
+			"key",
+			"descriptor",
+			"activity_type",
+			"queue",
+			"redis.yml",
+			"model",
+			"klass",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/index.erb",
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								725,
+								725
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.rb",
+					"settings":
+					{
+						"buffer_size": 1428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								323,
+								323
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/stylesheets/application.css",
+					"settings":
+					{
+						"buffer_size": 1006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 626.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scripts/parse_rails",
+					"settings":
+					{
+						"buffer_size": 1699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								953,
+								988
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scripts/parse_nginx",
+					"settings":
+					{
+						"buffer_size": 2312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1817,
+								1817
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.tests":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ng",
+				"lib/models/nginx_log_entry.rb"
+			],
+			[
+				"pang",
+				"scripts/parse_nginx"
+			],
+			[
+				"pars",
+				"scripts/parse_rails"
+			],
+			[
+				"log",
+				"lib/models/log_entry.rb"
+			],
+			[
+				"sa",
+				"public/stylesheets/application.css"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"app.r",
+				"app.rb"
+			],
+			[
+				"ppr",
+				"scripts/parse_rails"
+			],
+			[
+				"ind",
+				"views/index.erb"
+			],
+			[
+				"manag",
+				"app/models/bookings/service/manager.rb"
+			],
+			[
+				"commpegasus_reservation",
+				"app/models/bookings/service/command/pegasus_reservation.rb"
+			],
+			[
+				"redsub",
+				"app/models/bookings/service/command/red_email_subscription.rb"
+			],
+			[
+				"spec/models/bookings/service/command/red_email_subscription_spec.rb",
+				"spec/models/bookings/service/command/red_email_subscription_spec.rb"
+			],
+			[
+				"spec/models/bookings/service/command/decrement_inventory_spec.rb",
+				"spec/models/bookings/service/command/decrement_inventory_spec.rb"
+			],
+			[
+				"pegerb",
+				"cookbooks/config/templates/default/pegasus.yml.erb"
+			],
+			[
+				"pegym",
+				"config/pegasus.yml"
+			],
+			[
+				"pegapi",
+				"app/models/inventory/pegasus/api.rb"
+			],
+			[
+				"commemaisub",
+				"app/models/bookings/service/command/email_subscription.rb"
+			],
+			[
+				"email_subscription_spec.rb",
+				"spec/models/bookings/service/command/email_subscription_spec.rb"
+			],
+			[
+				"trans",
+				"app/models/bookings/transaction.rb"
+			],
+			[
+				"transspec",
+				"spec/models/bookings/transaction_spec.rb"
+			],
+			[
+				"commerpaym",
+				"app/models/commercial/payment_timing.rb"
+			],
+			[
+				"exbookconr",
+				"app/controllers/extranet/bookings_controller.rb"
+			],
+			[
+				"bookcontr",
+				"app/controllers/consumer/bookings_controller.rb"
+			],
+			[
+				"booking",
+				"app/models/bookings/booking.rb"
+			],
+			[
+				"activation_date_calculator.rb",
+				"app/models/bookings/service/activation_date_calculator.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"blue",
+				"spec/support/blueprints.rb"
+			],
+			[
+				"transpec",
+				"spec/models/bookings/transaction_spec.rb"
+			],
+			[
+				"audit",
+				"app/models/audit.rb"
+			],
+			[
+				"bookhe",
+				"app/helpers/extranet/bookings_helper.rb"
+			],
+			[
+				"booksercommand",
+				"app/models/bookings/service/command.rb"
+			],
+			[
+				"bookhelper",
+				"app/helpers/extranet/bookings_helper.rb"
+			],
+			[
+				"autcoshare",
+				"spec/shared/booking/authorise_commands_shared.rb"
+			],
+			[
+				"bookservcomm",
+				"app/models/bookings/service/command.rb"
+			],
+			[
+				"bookservomm",
+				"app/models/bookings/service/command.rb"
+			],
+			[
+				"authpayment",
+				"app/models/bookings/service/command/authorise_payment.rb"
+			],
+			[
+				"developer",
+				"app/controllers/developer_controller.rb"
+			],
+			[
+				"pro",
+				"app/models/property.rb"
+			],
+			[
+				"brand",
+				"app/models/brand.rb"
+			],
+			[
+				"consearcon",
+				"app/controllers/consumer/search_controller.rb"
+			],
+			[
+				"offer",
+				"app/models/offer.rb"
+			],
+			[
+				"pegaapi",
+				"app/models/inventory/pegasus/api.rb"
+			],
+			[
+				"searchespeg",
+				"app/models/searches/pegasus.rb"
+			],
+			[
+				"apis",
+				"app/models/api_source.rb"
+			],
+			[
+				"spec_h",
+				"spec/spec_helper.rb"
+			],
+			[
+				"sign_in.y",
+				"spec/fixtures/vcr_cassettes/acceptance/sign_in.yml"
+			],
+			[
+				"pegasus_command_integration_spec",
+				"spec/integration/booking/service/command/pegasus_command_integration_spec.rb"
+			],
+			[
+				"state",
+				"app/models/state.rb"
+			],
+			[
+				"searpeg",
+				"app/models/searches/pegasus.rb"
+			],
+			[
+				"pap",
+				"config/paperclip.local.yml"
+			],
+			[
+				"paper",
+				"config/paperclip.local.yml"
+			],
+			[
+				"loca",
+				"app/models/location.rb"
+			],
+			[
+				"location",
+				"app/controllers/extranet/locations_controller.rb"
+			],
+			[
+				"searc",
+				"app/models/search.rb"
+			],
+			[
+				"searchcon",
+				"app/controllers/consumer/search_controller.rb"
+			],
+			[
+				"pegstratspec",
+				"spec/models/booking_inventory/pegasus/strategy_spec.rb"
+			],
+			[
+				"bookserreso",
+				"app/models/bookings/service/response.rb"
+			],
+			[
+				"aud",
+				"app/models/audit.rb"
+			],
+			[
+				"audspec",
+				"spec/models/audit_spec.rb"
+			],
+			[
+				"appmodelbookinpegstra",
+				"app/models/booking_inventory/pegasus/strategy.rb"
+			],
+			[
+				"proper",
+				"app/models/property.rb"
+			],
+			[
+				"sear",
+				"app/models/search.rb"
+			],
+			[
+				"searchrb",
+				"app/models/search.rb"
+			],
+			[
+				"searchpega",
+				"app/models/searches/pegasus.rb"
+			],
+			[
+				"searchpeg",
+				"app/models/searches/pegasus.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"searchr",
+				"app/models/search.rb"
+			],
+			[
+				"enum",
+				"app/models/enum_type.rb"
+			],
+			[
+				"transac",
+				"app/models/bookings/transaction.rb"
+			],
+			[
+				"prop",
+				"app/models/property.rb"
+			],
+			[
+				"booktranbu",
+				"app/models/bookings/transaction_builder.rb"
+			],
+			[
+				"resprake",
+				"lib/tasks/responsys.rake"
+			],
+			[
+				"rsmalisp",
+				"spec/lib/responsys_mailing_list_opt_out_spec.rb"
+			],
+			[
+				"respon.ra",
+				"lib/tasks/responsys.rake"
+			],
+			[
+				"respomaout",
+				"lib/responsys_mailing_list_opt_out.rb"
+			],
+			[
+				"envst",
+				"config/environments/staging.rb"
+			],
+			[
+				"envstaging",
+				"config/environments/staging.rb"
+			],
+			[
+				"airb",
+				"config/initializers/airbrake.rb"
+			],
+			[
+				"resym",
+				"config/responsys.yml"
+			],
+			[
+				"respora",
+				"lib/tasks/responsys.rake"
+			],
+			[
+				"pegstraava",
+				"app/models/booking_inventory/pegasus/strategy_available.rb"
+			],
+			[
+				"bluep",
+				"spec/support/blueprints.rb"
+			],
+			[
+				"pegstra",
+				"app/models/booking_inventory/pegasus/strategy.rb"
+			],
+			[
+				"amend",
+				"spec/acceptance/new/extranet/bookings/amend_spec.rb"
+			],
+			[
+				"pegser",
+				"spec/models/searches/pegasus_spec.rb"
+			],
+			[
+				"beaver",
+				"lib/tasks/beaver.rake"
+			],
+			[
+				"off",
+				"app/models/offer.rb"
+			],
+			[
+				"inpeap",
+				"app/models/inventory/pegasus/api.rb"
+			],
+			[
+				"procf",
+				"Procfile"
+			],
+			[
+				"redconf",
+				"lib/redis_config.rb"
+			],
+			[
+				"envpr",
+				"config/environments/production.rb"
+			],
+			[
+				"envdeve",
+				"config/environments/development.rb"
+			],
+			[
+				"envpro",
+				"config/environments/production.rb"
+			],
+			[
+				"consearchcont",
+				"app/controllers/consumer/search_controller.rb"
+			],
+			[
+				"api/searchcont",
+				"app/controllers/consumer/api/search_controller.rb"
+			],
+			[
+				"apsearchcon",
+				"app/controllers/consumer/search_controller.rb"
+			],
+			[
+				"scop",
+				"lib/scoped_cache.rb"
+			],
+			[
+				"searchpegasus",
+				"app/models/searches/pegasus.rb"
+			],
+			[
+				"deve",
+				"app/controllers/developer_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"inpeoffs",
+				"spec/models/inventory/pegasus/offer_spec.rb"
+			],
+			[
+				"inpeglowestcostperproperty",
+				"app/models/inventory/pegasus/lowest_cost_per_property.rb"
+			],
+			[
+				"available",
+				"app/models/inventory/local/available_offer_summary.rb"
+			],
+			[
+				"concomm",
+				"app/assets/javascripts/consumer_common.js.coffee"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"pegst",
+				"app/models/booking_inventory/pegasus/strategy.rb"
+			],
+			[
+				"room",
+				"app/models/room_type.rb"
+			],
+			[
+				"yml",
+				"config/database.yml"
+			],
+			[
+				"amend_s",
+				"spec/acceptance/requests/extranet/booking_dashboard/booking_dashboard_amend_scenario_spec.rb"
+			],
+			[
+				"paymenttiming",
+				"app/models/commercial/concerns/has_payment_timing.rb"
+			],
+			[
+				"paymentt",
+				"app/models/commercial/payment_timing.rb"
+			],
+			[
+				"has_co",
+				"app/models/commercial/concerns/has_commission.rb"
+			],
+			[
+				"spec/acceptance/requests/extranet/room_type/room_type_hotelier_scenarios_spec.rb",
+				"spec/acceptance/requests/extranet/room_type/room_type_hotelier_scenarios_spec.rb"
+			],
+			[
+				"spec/acceptance/requests/extranet/property_details/property_images_hotelier_scenarios_spec.rb",
+				"spec/acceptance/requests/extranet/property_details/property_images_hotelier_scenarios_spec.rb"
+			],
+			[
+				"room_type_hotelier_scenarios_spec",
+				"spec/acceptance/requests/extranet/room_type/room_type_hotelier_scenarios_spec.rb"
+			],
+			[
+				"paytim",
+				"app/models/commercial/payment_timing.rb"
+			],
+			[
+				"has_timing",
+				"app/models/commercial/concerns/has_payment_timing.rb"
+			],
+			[
+				"hasformofpayment",
+				"app/models/commercial/concerns/has_form_of_payment.rb"
+			],
+			[
+				"devcont",
+				"app/controllers/developer_controller.rb"
+			],
+			[
+				"conf",
+				"config.ru"
+			],
+			[
+				"has_comm",
+				"app/models/commercial/concerns/has_commission.rb"
+			],
+			[
+				"roomtype",
+				"app/models/room_type.rb"
+			],
+			[
+				"spec/acceptance/requests/extranet/images/images_hotelier_scenarios_spec.rb",
+				"spec/acceptance/requests/extranet/images/images_hotelier_scenarios_spec.rb"
+			],
+			[
+				"changecontrol",
+				"app/controllers/extranet/booking_changes_controller.rb"
+			],
+			[
+				"changereques",
+				"app/models/bookings/change/request.rb"
+			],
+			[
+				"validations",
+				"app/models/booking_inventory/local/validations.rb"
+			],
+			[
+				"white",
+				"lib/tasks/whitewash.rake"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}

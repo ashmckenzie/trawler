@@ -6,30 +6,47 @@ dir = File.expand_path('../../data/nginx', __FILE__)
 
 Dir["#{dir}/*"].sort { |x, y| (x.match(/\.(\d+)$/) ? x.match(/\.(\d+)$/)[1].to_i : 0) <=> (y.match(/\.(\d+)$/) ? y.match(/\.(\d+)$/)[1].to_i : 0) }.each do |file|
 
+  # Ash
+  #
   # 127.0.0.1 - - [08/Nov/2012:11:54:42 +1100] "GET /attachments/dubrovnik/DSC_0805_thumb_500.jpg HTTP/1.1" 200 163818 "-" "Googlebot-Image/1.0"
   # => ["127.0.0.1", "-", "-", "[08/Nov/2012:11:54:42", "+1100]", "\"GET", "/attachments/dubrovnik/DSC_0805_thumb_500.jpg", "HTTP/1.1\"", "200", "163818", "\"-\"", "\"Googlebot-Image/1.0\""]
+
+  # Hooroo
+  #
+  # - _ - - [26/Oct/2012:03:10:09 +0000] \"GET /pulse HTTP/1.0\" 302 161 0.001 \"-\" \"-\" \"-\"\n
+  # 122.201.84.46 hotels.jetstar.com - appsupport@siteminder.com.au [31/Oct/2012:03:10:13 +0000] "POST /api/booking_rules/3033.xml HTTP/1.1" 202 228 0.288 "-" "Jakarta Commons-HttpClient/3.1" "$Version=0; _
+  # 103.10.8.51 hotels.jetstar.com - api@levart.net.au [26/Oct/2012:03:10:09 +0000] "POST /api/inventory/8351.xml HTTP/1.1" 202 222 0.504 "-" "-" "-"
+
+  # 172.19.9.109, 172.16.110.213, 167.130.96.232 hotel.qantas.com.au - - [26/Oct/2012:03:13:15 +0000] "GET /url HTTP/1.1" 200 155 0.079 "referrer" "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)" "cookie=value"
+  # log_format main $http_x_forwarded_for $host - $remote_user [$time_local] "$request" $status $body_bytes_sent $request_time "$http_referer" "$http_user_agent" "$http_cookie"
 
   puts "Processing #{file}.."
 
   contents = File.read(file)
 
   contents.each_line do |line|
-    result = line.split(/ /)
+    result = line.match(/([\d\. ,-]+) ([\w\.]+) - (.+) \[(\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2} \+\d{4})\] "([^"]+) ([^"]+) ([^"]+)" (\d{3}) (\d+) (\d+\.\d+) "[^"]+" "[^"]+" "[^"]*"/)
 
-    ip_address = result[0]
-    path = result[6]
-    status_code = result[8]
-    request_type = result[5].gsub('"', '')
-    raw = line
-    timestamp = result[3].match(/\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2}/)[0]
+    next unless result
 
-    NginxLogEntry.create(
-      ip_address: result[0],
-      path: path,
-      status_code: status_code,
-      request_type: request_type,
-      raw: raw,
-      timestamp: Time.strptime(timestamp, "%d/%b/%Y:%H:%M:%S")
-    )
+    begin
+      ip_address = result[1]
+      method = result[5]
+      path = result[6]
+      status_code = result[8]
+      raw = line
+      timestamp = result[4].match(/\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2}/)[0]
+
+      NginxLogEntry.create(
+        ip_address: result[0],
+        method: method,
+        path: path,
+        status_code: status_code,
+        raw: raw,
+        timestamp: Time.strptime(timestamp, "%d/%b/%Y:%H:%M:%S")
+      )
+    rescue => e
+      binding.pry
+    end
   end
 end

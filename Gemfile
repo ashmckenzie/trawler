@@ -3,6 +3,7 @@ source :rubygems
 gem 'mongoid'
 gem 'activesupport'
 gem 'sinatra', :require => false
+gem 'will_paginate_mongoid'
 gem 'hashie'
 gem 'compass'
 gem 'haml'

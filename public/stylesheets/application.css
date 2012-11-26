@@ -39,8 +39,30 @@ section#content {
   border-radius: 6px;
 }
 
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 ul#results li {
-  padding-bottom: 10px;
+  clear: both;
+  padding-bottom: 30px;
+}
+
+ul#results li .result {
+  padding-bottom: 6px;
+}
+
+ul#results li .entry {
+  color: #999;
+  float: left;
+  font-family: Monaco;
+  font-size: 0.6em;
+  padding-right: 4px;
+}
+
+ul#results li .entry span {
+  color: #000;
 }
 
 #search label {

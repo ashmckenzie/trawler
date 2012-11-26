@@ -1,3 +1,6 @@
+require 'will_paginate/array'
+require 'will_paginate/view_helpers/sinatra'
+
 get '/' do
   @q = ''
   @results = []
@@ -5,11 +8,11 @@ get '/' do
 end
 
 get '/search' do
-  @q = Query.new(params[:q])
-  terms = @q.terms
+  q = Query.new(params[:q])
+  terms = q.terms
   options = terms.structured.merge({ raw: Regexp.new(terms.loose) })
-  ap options
-  @results = LogEntry.any_of(options).desc(:timestamp)
+  @results = LogEntry.any_of(options).desc(:timestamp).paginate(:page => params[:page])
+  @query = q.escaped_string
   erb :index
 end
 
@@ -37,9 +40,17 @@ class Query
     # look for key="value" patterns
     #
     result[:structured] = raw.scan(/([^=]+)="([^"]+)"/).inject({}) do |hash, item|
-      key, value = item
+      key, value = item.map { |x| x.strip }
       raw_tmp.gsub!(Regexp.new(%Q{#{key}="#{value}"}), '')
-      hash[key.strip] = value.strip
+
+      # Translate source-type="xxx_yyy_zz" into _type="XxxYyyZz"
+      #
+      if key == 'source_type'
+        key = '_type'
+        value = value.camelize
+      end
+
+      hash[key] = value
       hash
     end
 

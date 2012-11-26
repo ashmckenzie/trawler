@@ -7,8 +7,8 @@ class RailsLogEntry < LogEntry
   field :path, type: String
   field :ip_address, type: String
 
-  index 'path' => 1
-  index 'status_code' => 1
+  index({ path: 1 }, { background: true })
+  index({ status_code: 1 }, { background: true })
 
   def as_string
     "#{status_code} #{request_type} #{ip_address} #{path}"

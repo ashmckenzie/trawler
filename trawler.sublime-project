@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+      "path": "/Users/ash/Personal/trawler",
+      "file_exclude_patterns": [
+        "*.sublime-*",
+        ".tags"
+      ],
+      "folder_exclude_patterns": [
+        "data"
+      ]
+		}
+	]
+}

@@ -30,17 +30,26 @@ Dir["#{dir}/*"].each do |file|
 
     if result[0] == 'Completed' && result[1] != '401'
 
-      timestamp = "#{data[0][6]} #{data[0][7]} #{data[0][8]}"
+      if data.size == 1
+        data = []
+        next
+      end
 
-      RailsLogEntry.create(
-        request_type: data[0][1],
-        status_code: data[1][1],
-        time: data[1][4],
-        path: data[0][2].gsub(/"/, ''),
-        ip_address: data[0][4],
-        raw: data.map { |x| x.join(' ') }.join("\n"),
-        timestamp: Time.strptime(timestamp, "%Y-%m-%d %H:%M:%S %z")
-      )
+      begin
+        timestamp = "#{data[0][6]} #{data[0][7]} #{data[0][8]}"
+
+        RailsLogEntry.create(
+          request_type: data[0][1],
+          status_code: data[1][1],
+          time: data[1][4],
+          path: data[0][2].gsub(/"/, ''),
+          ip_address: data[0][4],
+          raw: data.map { |x| x.join(' ') }.join("\n"),
+          timestamp: Time.strptime(timestamp, "%Y-%m-%d %H:%M:%S %z")
+        )
+      rescue => e
+        binding.pry
+      end
 
       data = []
     end
