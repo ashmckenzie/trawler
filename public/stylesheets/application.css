@@ -27,7 +27,7 @@ header,
 footer,
 section#content {
   margin: 0 auto;
-  width: 960px;
+  width: 1280px;
 }
 
 section#content {
@@ -35,7 +35,7 @@ section#content {
   margin-top: 20px;
   padding: 30px;
   min-height: 800px;
-  width: 900px;
+  width: 1200px;
   border-radius: 6px;
 }
 
@@ -50,6 +50,7 @@ ul#results li {
 }
 
 ul#results li .result {
+  overflow: auto;
   padding-bottom: 6px;
 }
 

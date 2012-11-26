@@ -45,9 +45,10 @@ class Query
 
       # Translate source-type="xxx_yyy_zz" into _type="XxxYyyZz"
       #
-      if key == 'source_type'
-        key = '_type'
-        value = value.camelize
+      case key
+        when 'source_type'
+          key = '_type'
+          value = value.camelize
       end
 
       hash[key] = value
