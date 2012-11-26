@@ -14,6 +14,7 @@
 
   <div id="pagination">
     <p><span class="total"><%= @results.total_entries %></span>results</p>
+    <p><a href="javascript:void(0)" id="toggle-all" data-state="hidden">Expand/collapse all</a></p>
     <%= will_paginate @results %>
   </div>
 
