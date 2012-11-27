@@ -3,7 +3,7 @@
 puts "ERROR: Disabled!"
 exit
 
-require_relative '../lib/initialisers/init'
+require File.expand_path('../../config/initialisers/init', __FILE__)
 
 dir = File.expand_path('../../data/nginx', __FILE__)
 
@@ -33,7 +33,7 @@ Dir["#{dir}/*"].sort { |x, y| (x.match(/\.(\d+)$/) ? x.match(/\.(\d+)$/)[1].to_i
     next unless result
 
     begin
-      ip_address = result[1]
+      ip_address = result[1].gsub(/[\s|-]*/, '').split(',').inject([]) { |a, i| a << i unless i.empty? ; a }
       method = result[5]
       path = result[6]
       status_code = result[8]
@@ -41,7 +41,7 @@ Dir["#{dir}/*"].sort { |x, y| (x.match(/\.(\d+)$/) ? x.match(/\.(\d+)$/)[1].to_i
       timestamp = result[4].match(/\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2}/)[0]
 
       NginxLogEntry.create(
-        ip_address: result[0],
+        ip_address: ip_address,
         method: method,
         path: path,
         status_code: status_code,

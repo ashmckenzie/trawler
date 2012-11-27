@@ -3,7 +3,7 @@
 puts "ERROR: Disabled!"
 exit
 
-require_relative '../lib/initialisers/init'
+require File.expand_path('../../config/initialisers/init', __FILE__)
 
 dir = File.expand_path('../../data/rails', __FILE__)
 
@@ -42,7 +42,7 @@ Dir["#{dir}/*"].each do |file|
         timestamp = "#{data[0][6]} #{data[0][7]} #{data[0][8]}"
 
         RailsLogEntry.create(
-          request_type: data[0][1],
+          method: data[0][1],
           status_code: data[1][1],
           time: data[1][4],
           path: data[0][2].gsub(/"/, ''),

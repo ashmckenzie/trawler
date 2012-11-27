@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/initialisers/init'
+require File.expand_path('../../config/initialisers/init', __FILE__)
 
 pry
