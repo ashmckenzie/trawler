@@ -28,7 +28,7 @@ class Query
       result[:commands] = raw.scan(/\s*\| ([^=]+)="([^"]+)"/).inject({}) do |hash, item|
         key, value = item.map { |x| x.strip }
 
-        raw_tmp.gsub!(Regexp.new(%Q{#{key}="#{value}"}), '')
+        raw_tmp.gsub!(Regexp.new(%Q{\s*\\|\s*#{key}="#{value}"}), '')
 
         hash[key] = value
         hash

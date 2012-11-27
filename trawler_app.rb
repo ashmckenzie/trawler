@@ -29,7 +29,7 @@ class TrawlerApp < Sinatra::Base
     terms = q.terms
     if raw_key = terms.commands['sort']
       key, direction = raw_key.split(/\s*:\s*/)
-      sort_by = { key => direction ? direction : -1 }
+      sort_by = { key => direction ? direction.to_i : -1 }
     else
       sort_by = { timestamp: -1 }
     end
